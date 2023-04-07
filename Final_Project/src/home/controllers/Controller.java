@@ -18,7 +18,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
+  // Creating Controller class
 public class Controller implements Initializable {
 	@FXML
 	private AnchorPane HomeRoot;

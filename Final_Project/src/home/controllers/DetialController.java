@@ -36,7 +36,7 @@ import home.model.Bill;
 import home.model.BillReader;
 import home.model.BillTools;
 import home.model.BillWriter;
-
+// Creating DetialController
 public class DetialController {
 	@FXML
 	TableView<Bill> detialTable;
