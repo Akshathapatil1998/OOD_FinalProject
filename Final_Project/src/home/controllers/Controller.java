@@ -18,7 +18,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-  // Creating Controller class
+
 public class Controller implements Initializable {
 	@FXML
 	private AnchorPane HomeRoot;
@@ -52,6 +52,9 @@ public class Controller implements Initializable {
 
 	@FXML
 	private Label pageTitle;
+	
+	@FXML
+	private Button btnUploadBill;
 
 	@FXML
 	private BarChart<String, Double> barChart;
@@ -77,6 +80,17 @@ public class Controller implements Initializable {
 		} else if (mouseEvent.getSource() == btnMarket) {
 			loadHomeRoot(mouseEvent, "/home/fxml/market.fxml");
 			setTitle("Market Place");
+		} else if(mouseEvent.getSource() == btnUploadBill) {
+			try {
+				Parent root = FXMLLoader.load(getClass().getResource("/home/fxml/UploadBill.fxml"));
+				Stage stage = new Stage();
+				stage.setScene(new Scene(root));
+				stage.setTitle("Upload Bills");
+				stage.initModality(Modality.APPLICATION_MODAL);
+				stage.show();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		} else if(mouseEvent.getSource() == btnAddNewOne) {
 			try {
 				Parent root = FXMLLoader.load(getClass().getResource("/home/fxml/AddNewOne.fxml"));
