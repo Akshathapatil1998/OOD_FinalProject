@@ -7,6 +7,10 @@
 	-fx-background-color: #1F2937;
 }
 
+.background-image {
+    -fx-background-color: linear-gradient(to bottom, #FFC0CB, #FFFFFF, #87CEFA);
+}
+
 .header-logo {
 	-fx-hgap: 5;
 }
@@ -22,7 +26,7 @@
 
 /* Side Bar */
 .sideBar {
-	-fx-background-color: lightgray;
+	-fx-background-color: linear-gradient(to bottom, #FFC0CB, #FFFFFF, #87CEFA);
 	-fx-alignment: center;
 	-fx-spacing: 35px;
 }
