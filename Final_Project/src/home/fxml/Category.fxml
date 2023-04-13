@@ -11,7 +11,7 @@
          <children>
             <TableView fx:id="cateTableView" layoutX="182.0" layoutY="100.0" prefHeight="495.0" prefWidth="806.0">
               <columns>
-                <TableColumn fx:id="cateItemColumn" prefWidth="75.0" text="category" />
+                <TableColumn fx:id="cateItemColumn" prefWidth="75.0" text="Category" />
                 <TableColumn fx:id="cateEditcolumn" prefWidth="75.0" text="C2" />
               </columns>
             </TableView>
