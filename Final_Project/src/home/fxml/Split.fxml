@@ -17,7 +17,7 @@
 
 <AnchorPane prefHeight="720.0" prefWidth="1152.0" stylesheets="@../css/Split.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.split.SplitController">
    <children>
-      <GridPane prefHeight="720.0" prefWidth="1152.0">
+      <GridPane prefHeight="720.0" prefWidth="1152.0" style="-fx-background-color: linear-gradient(to bottom, #FFC0CB, #FFFFFF, #87CEFA);;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="985.0" minWidth="10.0" prefWidth="577.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="603.0" minWidth="10.0" prefWidth="575.0" />
@@ -28,11 +28,11 @@
           <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="190.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox prefHeight="299.0" prefWidth="577.0">
+            <VBox prefHeight="299.0" prefWidth="577.0" style="-fx-background-color: linear-gradient(to bottom, #FFC0CB, #FFFFFF, #87CEFA);;">
                <children>
                   <Label text="Bill Table">
                      <font>
-                        <Font name="Phosphate Inline" size="18.0" />
+                        <Font name="Apple Color Emoji" size="18.0" />
                      </font>
                      <styleClass>
                         <String fx:value="labelFont" />
@@ -49,7 +49,7 @@
                <children>
                   <Label text="Share Table">
                      <font>
-                        <Font name="Phosphate Inline" size="35.0" />
+                        <Font name="Apple Color Emoji" size="36.0" />
                      </font>
                      <styleClass>
                         <String fx:value="labelFont" />
@@ -68,29 +68,38 @@
             </VBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="1">
                <children>
-                  <Label styleClass="labelFont" text="Item">
+                  <Label styleClass="labelFont" text="Product">
                      <font>
-                        <Font name="Phosphate Inline" size="15.0" />
+                        <Font name="Apple Color Emoji" size="14.0" />
                      </font></Label>
                   <TextField fx:id="itemInput" />
                   <Label styleClass="labelFont" text="Amount">
                      <font>
-                        <Font name="Phosphate Inline" size="15.0" />
+                        <Font name="Apple Color Emoji" size="14.0" />
                      </font></Label>
                   <TextField fx:id="amountInput" />
-                  <Button mnemonicParsing="false" onAction="#addBill" text="Add" />
+                  <Button mnemonicParsing="false" onAction="#addBill" style="-fx-background-color: #2B2D42;" text="ADD" textFill="WHITE">
+                     <font>
+                        <Font name="Apple Color Emoji" size="13.0" />
+                     </font></Button>
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <Label styleClass="labelFont" text="Name">
+                  <Label styleClass="labelFont" text="NAME">
                      <font>
-                        <Font name="Phosphate Inline" size="15.0" />
+                        <Font name="Apple Color Emoji" size="14.0" />
                      </font>
                   </Label>
                   <TextField fx:id="peopleNameInput" />
-                  <Button fx:id="btnAddPeople" mnemonicParsing="false" onAction="#addPerson" text="Add" />
-                  <Button mnemonicParsing="false" onAction="#calculateSplitBill" text="Calculate Split Bill" />
+                  <Button fx:id="btnAddPeople" mnemonicParsing="false" onAction="#addPerson" style="-fx-background-color: #2B2D42;" text="ADD" textFill="WHITE">
+                     <font>
+                        <Font name="Apple Color Emoji" size="14.0" />
+                     </font></Button>
+                  <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#calculateSplitBill" style="-fx-background-color: #2B2D42;" text="Calculate-Split Bill" textFill="WHITE">
+                     <font>
+                        <Font name="Apple Color Emoji" size="14.0" />
+                     </font></Button>
 
                </children>
             </HBox>

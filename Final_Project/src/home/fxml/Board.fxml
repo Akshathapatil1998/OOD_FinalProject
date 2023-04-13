@@ -12,89 +12,106 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane minHeight="600.0" minWidth="1000.0" stylesheets="@../css/Board.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.Controller">
    <children>
-      <BorderPane prefHeight="600.0" prefWidth="1000.0" styleClass="root">
+      <BorderPane prefHeight="600.0" prefWidth="1000.0" styleClass="root" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="header" BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #2B2D42;" styleClass="header" BorderPane.alignment="CENTER">
                <children>
-                  <FlowPane alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="521.0" styleClass="header-logo">
+                  <FlowPane alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="521.0" style="-fx-background-color: #2B2D42;" styleClass="header-logo">
                      <children>
                         <ImageView fitHeight="84.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" styleClass="logo-img">
                            <image>
-                              <Image url="@../../../images/logo.png" />
+                              <Image url="@../../../icons/UploadedDollar.jpeg" />
                            </image>
                         </ImageView>
-                        <Label fx:id="pageTitle" style="-fx-font-size: 25; -fx-font-weight: bold;" styleClass="logo-title" text="Credit Manager" textFill="#e5e7eb">
+                        <Label fx:id="pageTitle" style="-fx-font-size: 25; -fx-font-weight: bold;" styleClass="logo-title" text="Dollar Dash" textFill="#e5e7eb">
                            <padding>
                               <Insets left="10.0" />
                            </padding>
+                           <font>
+                              <Font name="Apple Color Emoji" size="14.0" />
+                           </font>
                         </Label>
                      </children>
                      <padding>
                         <Insets left="10.0" />
                      </padding>
                   </FlowPane>
-                  <Pane prefHeight="100.0" prefWidth="500.0">
+                  <Pane prefHeight="100.0" prefWidth="500.0" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="236.0" style="-fx-alignment: center-right; -fx-spacing: 20;">
                      <children>
-                        <Button fx:id="btnUploadBill" layoutX="251.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="149.0" text="Upload Bills" />
-                     </children></Pane>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center-right; -fx-spacing: 20;">
-                     <children>
-                        <Button fx:id="btnAddNewOne" mnemonicParsing="false" onAction="#handleButtonClicks">
+                        <Button fx:id="btnAddNewOne" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="149.0" text="AddNew">
                            <styleClass>
                               <String fx:value="add-btn" />
                               <String fx:value="header-btn" />
                            </styleClass>
+                           <font>
+                              <Font name="Apple Color Emoji" size="13.0" />
+                           </font>
                            <graphic>
                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="header-btn">
                                  <image>
-                                    <Image url="@../../../images/add.png" />
+                                    <Image url="@../../../icons/Addition.png" />
                                  </image>
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button mnemonicParsing="false">
+                        <Button fx:id="btnUploadBill" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="149.0" text="Upload Bills">
+                           <font>
+                              <Font name="Apple Color Emoji" size="13.0" />
+                           </font>
                            <styleClass>
-                              <String fx:value="profile-btn" />
                               <String fx:value="header-btn" />
+                              <String fx:value="add-btn" />
                            </styleClass>
                            <graphic>
                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="header-btn">
                                  <image>
-                                    <Image url="@../../../images/profile.png" />
+                                    <Image url="@../../../icons/UploadImage1.png" />
                                  </image>
                               </ImageView>
                            </graphic>
-                        </Button>
-                     </children>
+                           </Button>
+                      </children>
                   </HBox>
-               </children></HBox>
-         </top>
+              </children>
+              </HBox>
+       </top>
          <left>
             <VBox prefHeight="200.0" prefWidth="200.0" style="-fx-spacing: 50px;" styleClass="sideBar" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" styleClass="sideBar-btn" text="Overview">
+                  <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #2B2D42;" styleClass="sideBar-btn" text="Summary">
                      <graphic>
                         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../icons/overview.png" />
+                              <Image url="@../../../icons/Summary.png" />
                            </image>
                         </ImageView>
                      </graphic>
+                     <font>
+                        <Font name="Apple Color Emoji" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
                   </Button>
-                  <Button fx:id="btnStat" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" styleClass="sideBar-btn" text="Visualization">
+                  <Button fx:id="btnStat" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #2B2D42;" styleClass="sideBar-btn" text="Dashboard">
                      <graphic>
                         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../icons/monthly.png" />
+                              <Image url="@../../../icons/Dashboard1.png" />
                            </image>
                         </ImageView>
                      </graphic>
+                     <font>
+                        <Font name="Apple Color Emoji" size="13.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btnCate" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" styleClass="sideBar-btn" text="Category">
+                  <Button fx:id="btnCate" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #2B2D42;" styleClass="sideBar-btn" text="Category">
                      <graphic>
                         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -102,45 +119,75 @@
                            </image>
                         </ImageView>
                      </graphic>
+                     <font>
+                        <Font name="Apple Color Emoji" size="13.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btnDetial" layoutX="10.0" layoutY="118.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" styleClass="sideBar-btn" text="Transactions">
+                  <Button fx:id="btnDetial" layoutX="10.0" layoutY="118.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #2B2D42;" styleClass="sideBar-btn" text="Transactions">
                      <graphic>
                         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../icons/transactions.png" />
+                              <Image url="@../../../icons/Transaction.png" />
                            </image>
                         </ImageView>
                      </graphic>
+                     <font>
+                        <Font name="Apple Color Emoji" size="13.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btnSplit" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" styleClass="sideBar-btn" text="Spilt Money">
+                  <Button fx:id="btnSplit" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #2B2D42;" styleClass="sideBar-btn" text="Spilt Money">
                      <graphic>
                         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../icons/split.png" />
+                              <Image url="@../../../icons/SplitMoney1.png" />
                            </image>
                         </ImageView>
                      </graphic>
+                     <font>
+                        <Font name="Apple Color Emoji" size="13.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btnMarket" layoutX="25.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" styleClass="sideBar-btn" text="Marketplace">
+                  <Button fx:id="btnMarket" layoutX="25.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #2B2D42;" styleClass="sideBar-btn" text="Marketplace">
                      <graphic>
-                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../../../images/marketplace.png" />
+                              <Image url="@../../../icons/MarketPlace.png" />
                            </image>
                         </ImageView>
                      </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Apple Color Emoji" size="13.0" />
+                     </font>
                   </Button>
                </children></VBox>
          </left>
          <bottom>
-            <VBox prefHeight="30.0" prefWidth="1000.0" styleClass="footer" BorderPane.alignment="CENTER">
+            <VBox prefHeight="30.0" prefWidth="1000.0" style="-fx-background-color: #2B2D42;" styleClass="footer" BorderPane.alignment="CENTER">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="footer-text" text="Copyright © Makka Pakka 2022" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="footer-text" text="Copyright © DollarDash 2023" translateX="10.0" wrappingWidth="232.93896484375">
+                     <font>
+                        <Font name="American Typewriter" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin></Text>
                </children>
             </VBox>
          </bottom>
          <center>
-            <AnchorPane fx:id="HomeRoot" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            <AnchorPane fx:id="HomeRoot" cacheShape="false" centerShape="false" prefHeight="200.0" prefWidth="200.0" scaleShape="false" styleClass="background-image" stylesheets="@../css/Board.css" BorderPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets top="100.0" />
+               </padding></AnchorPane>
          </center>
       </BorderPane>
    </children>

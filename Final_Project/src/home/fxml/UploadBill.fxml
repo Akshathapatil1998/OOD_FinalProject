@@ -15,7 +15,7 @@
          <children>
             <Label prefHeight="45.0" prefWidth="348.0" text="Bill Name">
                <font>
-                  <Font size="23.0" />
+                  <Font name="Apple Color Emoji" size="23.0" />
                </font>
                <padding>
                   <Insets left="10.0" />
@@ -28,17 +28,17 @@
             </TextField>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
                <children>
-                  <Button fx:id="btnupload" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#uploadbillOnClicks" text="UPLOAD" textAlignment="CENTER" textOverrun="CLIP">
+                  <Button fx:id="btnupload" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#uploadbillOnClicks" style="-fx-background-color: #2B2D42;" text="UPLOAD" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
                      <font>
-                        <Font size="20.0" />
+                        <Font name="Apple Color Emoji" size="20.0" />
                      </font>
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="btnCancel" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#cancelOnClicks" text="CANCEL" textAlignment="CENTER" textOverrun="CLIP">
+                  <Button fx:id="btnCancel" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#cancelOnClicks" style="-fx-background-color: #2B2D42;" text="CANCEL" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
                      <font>
-                        <Font size="20.0" />
+                        <Font name="Apple Color Emoji" size="20.0" />
                      </font>
                      <HBox.margin>
                         <Insets right="5.0" />

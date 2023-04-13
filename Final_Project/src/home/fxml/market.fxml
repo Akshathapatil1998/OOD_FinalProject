@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1152.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.MarketController">
+<AnchorPane prefHeight="720.0" prefWidth="1152.0" style="-fx-background-color: linear-gradient(to bottom, #FFC0CB, #FFFFFF, #87CEFA);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.MarketController">
    <children>
       <GridPane layoutX="67.0" prefHeight="720.0" prefWidth="1043.0" style="-fx-alignment: center; -fx-padding: 10px; -fx-hgap: 20px; -fx-vgap: 20px;">
         <columnConstraints>
@@ -131,7 +131,7 @@
                               </VBox>
                            </children>
                         </HBox>
-                        <Button fx:id="btn2apply" onAction="#addOnClicks2" mnemonicParsing="false" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply Now">
+                        <Button fx:id="btn2apply" mnemonicParsing="false" onAction="#addOnClicks2" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply Now">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -191,7 +191,7 @@
                               </VBox>
                            </children>
                         </HBox>
-                        <Button fx:id="btn3apply" onAction="#addOnClicks3"  mnemonicParsing="false" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
+                        <Button fx:id="btn3apply" mnemonicParsing="false" onAction="#addOnClicks3" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -251,7 +251,7 @@
                               </VBox>
                            </children>
                         </HBox>
-                        <Button fx:id="btn4apply" onAction="#addOnClicks4" mnemonicParsing="false" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
+                        <Button fx:id="btn4apply" mnemonicParsing="false" onAction="#addOnClicks4" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -311,7 +311,7 @@
                               </VBox>
                            </children>
                         </HBox>
-                        <Button fx:id="btn5apply" onAction="#addOnClicks5" mnemonicParsing="false" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
+                        <Button fx:id="btn5apply" mnemonicParsing="false" onAction="#addOnClicks5" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -371,7 +371,7 @@
                               </VBox>
                            </children>
                         </HBox>
-                        <Button fx:id="btn6apply" onAction="#addOnClicks6" mnemonicParsing="false" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
+                        <Button fx:id="btn6apply" mnemonicParsing="false" onAction="#addOnClicks6" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
