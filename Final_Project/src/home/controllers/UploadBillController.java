@@ -42,7 +42,7 @@ import javafx.stage.Stage;
 		@FXML
 		private TextField fieldCategory;
 		@FXML
-		private static final String DESTINATION_FOLDER = "C:\\Users\\Dell\\Downloads\\CSYE6220FINAL-main\\UploadedBills"; // specify the destination folder here
+		private static final String DESTINATION_FOLDER = "/Users/sakshinayak/Desktop/GitHub OOD Project\\/OOD_FinalProject/UploadedBills"; // specify the destination folder here
 		@FXML
 		private void cancelOnClicks() {
 			Stage stage = (Stage)btnCancel.getScene().getWindow();
