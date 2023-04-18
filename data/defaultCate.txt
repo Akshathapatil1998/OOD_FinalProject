@@ -4,7 +4,9 @@ FOOD
 DRINK
 MOVIE
 BOOK
-Food
-GardenClothing
 Clothing
-ELECTRONICS
+Food
+Garden
+Fashion
+
+NULL

@@ -106,7 +106,7 @@ public class Controller implements Initializable {
 	}
 
 	private void setTitle(String str) {
-		pageTitle.setText("Easy Account - " + str);
+		pageTitle.setText("Dollar Dash - " + str);
 	}
 
 	private void loadStage(String fxml, String title) {

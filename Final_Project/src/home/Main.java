@@ -15,11 +15,7 @@ public class Main extends Application {
 		primaryStage.setTitle("Dollar Dash");
 		primaryStage.setScene(new Scene(root));
 		primaryStage.show();
-		// Parent root = FXMLLoader.load(getClass().getResource("fxml/HomeRoot.fxml"));
-		// Scene scene = new Scene(root,400,400);
-		// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		// primaryStage.setScene(scene);
-		// primaryStage.show();
+		
 	}
 
 	public static void main(String[] args) {
