@@ -17,10 +17,10 @@ The project is implemented using Java programming language, along with JavaFX fo
 
 ## Key functionalities:
 
-1. Fair Splitting calculator: Our unique calculator ensures the equitable division of expenses among users.
-2 .Expense tracking: tracks all transactions and provides users with a detailed history of their expenses
-3 .Bill uploading and storage: Users can easily upload and store bills and receipts in the app
-4 .Visualization: Our Dashboard displays various categories of expenses and other information in an easy-to-understand format.
+-  Fair Splitting calculator: Our unique calculator ensures the equitable division of expenses among users.
+-  Expense tracking: tracks all transactions and provides users with a detailed history of their expenses
+-  Bill uploading and storage: Users can easily upload and store bills and receipts in the app
+-  Visualization: Our Dashboard displays various categories of expenses and other information in an easy-to-understand format.
 
 ## Contributers
 - AKSHATHA PATIL - 002657158
